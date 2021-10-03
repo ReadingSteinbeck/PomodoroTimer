@@ -18,7 +18,7 @@ function FocusButtons({
             className="btn btn-secondary"
             data-testid="decrease-focus"
             onClick={decreaseFocus}
-            disabled={session === null ? false : true}
+            disabled={session}
           >
             <span className="oi oi-minus" />
           </button>
@@ -28,7 +28,7 @@ function FocusButtons({
             className="btn btn-secondary"
             data-testid="increase-focus"
             onClick={increaseFocus}
-            disabled={session === null ? false : true}
+            disabled={session}
           >
             <span className="oi oi-plus" />
           </button>

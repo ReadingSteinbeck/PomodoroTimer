@@ -19,7 +19,7 @@ function BreakButtons({
               className="btn btn-secondary"
               data-testid="decrease-break"
               onClick={decreaseBreak}
-              disabled={session === null ? false : true}
+              disabled={session}
             >
               <span className="oi oi-minus" />
             </button>
@@ -29,7 +29,7 @@ function BreakButtons({
               className="btn btn-secondary"
               data-testid="increase-break"
               onClick={increaseBreak}
-              disabled={session === null ? false : true}
+              disabled={session}
             >
               <span className="oi oi-plus" />
             </button>
